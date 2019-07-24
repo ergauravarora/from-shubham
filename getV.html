@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>show</title>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('button').click(function()
+		{
+			var x = $('div').children('p');
+			console.log(x);
+
+			for(i=0;i<x.length;i++)
+			{
+				console.log($(x[i]).text());
+			}
+		})
+	})
+	
+	</script>
+</head>
+
+<body>
+<div>
+	<p>this is text to hide</p>
+	<p>dgftext to hide</p>	
+	<p>thifdgf text to hide</p>
+	<p>this isfdgft to hide</p>
+</div>
+
+<button>Hide</button>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function add()
+		{
+			var h = "this is h1"
+			var x= document.createElement('h1')
+			x.innerHTML = h; 
+			document.getElementById("1").appendChild(x);
+			/*x.addAttribute('value' , 'this is text by h1');*/
+		}
+
+
+		setTimeout(function(){})
+	</script>
+</head>
+<body>
+<div id="1">
+	<p>hello</p>
+</div>
+<button onclick="add()">add</button>
+</body>
+</html>
